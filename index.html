@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=sms:+15555551111?body=hello%20world%20(ref:%20WhuZR)">
   </head>
   <body>
     <section>
@@ -25,10 +24,16 @@
     </section>
     <section>
       <h2>sms:+number? space</h2>
+      <!--
       <button onclick="openSmsByAssignment('sms:+15555551111?body=hello world (ref: WhuZR)')">Assignment</button>
       <button onclick="openSmsByAssign('sms:+15555551111?body=hello world (ref: WhuZR)')">Assign</button>
       <button onclick="openSmsByReplace('sms:+15555551111?body=hello world (ref: WhuZR)')">Replace</button>
       <button onclick="openSmsByOpen('sms:+15555551111?body=hello world (ref: WhuZR)')">Open</button>
+      -->
+      <button onclick="openSmsByAssignment1()">Assignment</button>
+      <button onclick="openSmsByAssign1()">Assign</button>
+      <button onclick="openSmsByReplace1()">Replace</button>
+      <button onclick="openSmsByOpen1()">Open</button>
       <a href="sms:+15555551111?body=hello world (ref: WhuZR)">Navigate</a>
       <input type="checkbox" />
     </section>
@@ -53,10 +58,16 @@
     </section>
     <section>
       <h2>sms:+number&amp; space</h2>
+      <!--
       <button onclick="openSmsByAssignment('sms:+15555551111&body=hello world (ref: WhuZR)')">Assignment</button>
       <button onclick="openSmsByAssign('sms:+15555551111&body=hello world (ref: WhuZR)')">Assign</button>
       <button onclick="openSmsByReplace('sms:+15555551111&body=hello world (ref: WhuZR)')">Replace</button>
       <button onclick="openSmsByOpen('sms:+15555551111&body=hello world (ref: WhuZR)')">Open</button>
+      -->
+      <button onclick="openSmsByAssignment2()">Assignment</button>
+      <button onclick="openSmsByAssign2()">Assign</button>
+      <button onclick="openSmsByReplace2()">Replace</button>
+      <button onclick="openSmsByOpen2()">Open</button>
       <a href="sms:+15555551111&body=hello world (ref: WhuZR)">Navigate</a>
       <input type="checkbox" />
     </section>
@@ -94,6 +105,16 @@
       function openSmsByAssign(link) { window.location.assign(link); }
       function openSmsByReplace(link) { window.location.replace(link); }
       function openSmsByOpen(link) { window.open(link); }
+
+      function openSmsByAssignment1() { openSmsByAssignment('sms:+15555551111?body=hello world (ref: WhuZR)'); }
+      function openSmsByAssign1() { openSmsByAssign('sms:+15555551111?body=hello world (ref: WhuZR)'); }
+      function openSmsByReplace1() { openSmsByReplace('sms:+15555551111?body=hello world (ref: WhuZR)'); }
+      function openSmsByOpen1() { openSmsByOpen('sms:+15555551111?body=hello world (ref: WhuZR)'); }
+      
+      function openSmsByAssignment2() { openSmsByAssignment('sms:+15555551111&body=hello world (ref: WhuZR)'); }
+      function openSmsByAssign2() { openSmsByAssign('sms:+15555551111&body=hello world (ref: WhuZR)'); }
+      function openSmsByReplace2() { openSmsByReplace('sms:+15555551111&body=hello world (ref: WhuZR)'); }
+      function openSmsByOpen2() { openSmsByOpen('sms:+15555551111&body=hello world (ref: WhuZR)'); }
     </script>
   </body>
 </html>
